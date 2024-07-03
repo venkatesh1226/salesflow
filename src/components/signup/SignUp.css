@@ -1,0 +1,86 @@
+/* Apply box-sizing to all elements for consistency */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for the sign-up form container */
+.signup-container {
+  max-width: 400px;
+  /* width: 100%; */
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling within the form */
+.signup-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form layout */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* General form group styling */
+.form-group {
+  margin-bottom: 15px;
+  position: relative; /* Required for absolute positioning of the toggle within */
+}
+
+/* Input field styling */
+.form-control {
+  padding: 10px;
+  padding-right: 50px; /* Extra padding to not overlap text with toggle button */
+  font-size: 16px;
+  width: 100%; /*Ensure input takes full width*/
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #d896ff; /* Blue border for focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Specific styles for password inputs with toggle */
+.password-input {
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: small;
+}
+
+/* Button styling */
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #a234e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.btn:hover {
+  background-color: #d896ff;
+  
+}
